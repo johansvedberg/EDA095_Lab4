@@ -7,6 +7,7 @@ public class Main {
 	public static void main(String[] args) {
 
 		String address = "http://cs.lth.se/eda095";
+		@SuppressWarnings("unused")
 		String address2 = "http://cs.lth.se/pierre_nugues/";
 
 		Spider spider = new Spider(address);
