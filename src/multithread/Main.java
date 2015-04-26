@@ -6,11 +6,11 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		String address = "http://cs.lth.se/eda095";
+		String address1 = "http://cs.lth.se/eda095";
 		@SuppressWarnings("unused")
 		String address2 = "http://cs.lth.se/pierre_nugues/";
 
-		Spider spider = new Spider(address);
+		Spider spider = new Spider(address1);
 
 		ArrayList<Thread> nbrOfThreads = new ArrayList<Thread>();
 		System.out.print("Starting scan:");
