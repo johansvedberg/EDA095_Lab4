@@ -24,14 +24,14 @@ public class Processor implements Runnable {
 
 			Document doc = null;
 			Elements links = null;
-			// Elements frames = null;
+			 Elements frames = null;
 
 			try {
 				doc = Jsoup.connect(address).get();
 				links = doc.select("a[href]");
 				// links = doc.getElementsByAttribute("href");
 				// links = doc.getElementsByTag("a");
-				// frames = doc.getElementsByTag("frame");
+				 frames = doc.getElementsByTag("frame");
 
 			} catch (IOException e) {
 
@@ -57,10 +57,10 @@ public class Processor implements Runnable {
 				}
 			}
 
-			// for (Element frame : frames) {
-			// String object = frame.attr("src");
-			// System.out.println(object);
-			// }
+			 for (Element frame : frames) {
+			 String object = frame.attr("src");
+			 System.out.println(object);
+			 }
 
 		}
 
