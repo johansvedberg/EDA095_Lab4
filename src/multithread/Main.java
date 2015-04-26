@@ -14,6 +14,7 @@ public class Main {
 
 		ArrayList<Thread> nbrOfThreads = new ArrayList<Thread>();
 		System.out.print("Starting scan:");
+		System.out.println("apa");
 
 		for (int i = 0; i < 10; i++) {
 			Thread t = new Thread(new Processor(spider));
